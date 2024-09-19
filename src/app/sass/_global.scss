@@ -10,3 +10,10 @@
     justify-content: center;
     align-items: center;     
 }
+
+.body-blur {
+  }
+
+button {
+    font-family: inherit; /* Herda a fonte do elemento pai (neste caso, o body) */
+}

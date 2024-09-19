@@ -1,14 +1,13 @@
 // import Button from './components/Button'
 
 import Header from "./components/Header";
-import ModalHome from "./components/ModalHome";
-import styles from "./sass/page.module.scss"
+import Container from "./components/Container";
 
 export default function Home() {
     return (
       <>
       <Header/>
-      <ModalHome/>
+      <Container/>
       </>
       
       

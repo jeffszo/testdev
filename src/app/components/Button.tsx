@@ -1,6 +1,18 @@
 import styles from '../sass/button.module.scss'
+import React, { ButtonHTMLAttributes } from 'react';
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+    children: React.ReactNode; 
+};
 
 
-export default function Button(){
-    return <button className={styles.button}>Adicionar nova tarefa</button>
-}
+
+const Button: React.FC<ButtonProps> = ({ children, ...props }) => {
+    return (
+        <button className={styles.button} {...props}>
+            {children}
+        </button>
+    );
+};
+
+export default Button;
