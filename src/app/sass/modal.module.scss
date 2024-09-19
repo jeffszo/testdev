@@ -1,0 +1,67 @@
+.fullscreen{
+    display: flex;
+    justify-content: center;
+
+    .containermodal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 8px;
+        padding: 0rem 1rem;
+        border: 1px solid #EAECF0;
+        margin-top: 1rem;
+    }
+
+    h6{
+        margin: 1.5rem 0;
+        font-size: 16px;
+        font-weight: 100;
+        color: #0000008A;
+    }
+
+    .containertasks{
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+    .containertodo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.5rem;
+        width: 25rem;
+        padding: 0 1.25rem;
+        border-radius: 8px;
+        border: 2px dashed #D7DDE9;
+        gap: 1rem;
+
+
+        .containercheck{
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        input{
+            transform: scale(1.8);
+            border-color: #D7DDE9;
+            cursor: pointer;
+        }
+
+        span{
+            font-weight: 400;
+        }
+    }
+
+    .containerdone{
+
+        h6{
+            text-align: center;
+        }
+    }
+
+
+}
+
+
