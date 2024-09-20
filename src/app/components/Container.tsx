@@ -68,7 +68,7 @@ export default function Container() {
     <div className={styles.fullscreen}>
       <div className={styles.containermodal}>
         <div>
-          <h6>Suas tarefas</h6>
+          <h6 className={styles.titleTasks}>Suas tarefas de hoje</h6>
           {tasks.map((task) => (
             <div key={task.id} className={styles.containertodo}>
               <div className={styles.containercheck}>
@@ -92,9 +92,9 @@ export default function Container() {
         </div>
 
         <div>
-          <h6>Tarefas finalizadas</h6>
+          <h6 className={styles.titleDone}>Tarefas finalizadas</h6>
           {completedTasks.map((task) => (
-            <div key={task.id} className={styles.containertodo}>
+            <div key={task.id} className={styles.containerdone}>
               <div className={styles.containercheck}>
                 <input 
                   checked 
@@ -115,9 +115,7 @@ export default function Container() {
           ))}
         </div>
 
-        <div>
           <Button onClick={handleButtonClick}>Adicionar nova tarefa</Button>
-        </div>
 
         {showModal && (
           <div className={styles.modal}>
@@ -130,10 +128,11 @@ export default function Container() {
                 value={newTaskName} 
                 onChange={(e) => setNewTaskName(e.target.value)} 
               />
-              <div> 
-                <button onClick={handleModalClose}>Fechar</button>
+              <div className={styles.containerbtn}> 
+                <button onClick={handleModalClose}>Cancelar</button>
                 <button onClick={handleAddTask}>Adicionar</button>
               </div>
+              
             </div>
           </div>
         )}

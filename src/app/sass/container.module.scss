@@ -51,6 +51,8 @@
             cursor: pointer;
         }
 
+        
+
        
 
         span{
@@ -59,16 +61,42 @@
     }
 
     .containerdone{
-        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        height: 3.5rem;
+        width: 25rem;
+        padding: 0 1.25rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+        border: 2px dashed #D7DDE9;
+        gap: 1rem;
+        cursor: pointer;
+
+        .containercheck{
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        input{
+            transform: scale(1.8);
+            border-color: #D7DDE9;
+            cursor: pointer;
+        }
 
         .titleTasks{
             text-align: center;
         }
 
         .taskname{
-            color: gray;
+                color: gray;
             text-decoration: line-through;
         }
+    }
+
+    .titleDone, .titleTasks{
+        text-align: center;
     }
 
 
@@ -78,18 +106,63 @@
 
 .modal {
     position: fixed; /* Posiciona o modal em relação à janela */
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8) ;/* Centraliza o modal */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    width: 300px; /* Largura do modal */
-    padding: 40px;
-    border-radius: 12px;
-    z-index: 999; /* Garante que o modal fique acima de outros elementos */
+    width: 450px;
+    height: 286px;
+    border-radius: 16px;
+    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
   }
   
   .modalContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     background-color: white;
     padding: 20px;
-    text-align: center; /* Centraliza o conteúdo dentro do modal */
+
+
+    h2{
+        margin: 1rem 0 1.5rem 0.5rem;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    span{
+        margin: 0 0.5rem;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    input{
+        margin: 0.3rem 0 2rem 0.5rem;
+        border: 1px solid #D7DDE9;
+        border-radius: 8px;
+        padding: 16px;
+        width: 386px;
+        font-family: inherit;
+    }
+
+    input::placeholder{
+        font-size: 16px;
+    }
+
+    .containerbtn{
+        display: flex;
+        gap: 0.5rem;
+        margin-left: 0.5rem;
+
+        button{
+            width: 185px;
+            padding: 16px;
+            border: none;
+            font-weight: 400;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+    }
   }
