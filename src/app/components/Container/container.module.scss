@@ -61,12 +61,17 @@
             gap: 0.8rem;
 
             input{
-                width: 20px; 
-                height: 20px;          
-                padding: 2rem;
-                border-color: #D7DDE9;
+                width: 1.5rem; 
+                height: 1.5rem;          
                 cursor: pointer;
+                border-radius: 4px;
+                cursor: pointer;
+  
             }
+
+             input:checked {
+          
+              }
 
         }
 
@@ -103,14 +108,15 @@
             input{
                 width: 1.5rem; 
                 height: 1.5rem;
-                padding: 2rem;
                 border-color: #D7DDE9;
                 border-radius: 4px;
                 cursor: pointer;
-                -webkit-appearance: none; 
-                -moz-appearance: none;    
-                appearance: none;
+         
             }
+
+            input:checked {
+                color: #fff 
+              }
         }
 
     
