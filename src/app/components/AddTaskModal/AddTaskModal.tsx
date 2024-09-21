@@ -12,7 +12,7 @@ interface AddTaskModalProps {
 }
 
 
-export default function AddTaskModal ({isOpen, onClose, newTaskName, setNewTaskName, onAddTask}) : AddTaskModalProps {
+export default function AddTaskModal ({isOpen, onClose, newTaskName, setNewTaskName, onAddTask} : AddTaskModalProps) {
     return (
 
 

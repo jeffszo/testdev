@@ -6,8 +6,9 @@ import IconDelete from "../../public/delete-icon.svg";
 import Button from "../Button/Button";
 import { useState } from "react";
 import { Task } from '../../types/Task';
-import AddTaskModal from "../AddTaskModal/AddTaskModal";
 import DeleteTaskModal from "../DeleteTaskModal/DeleteTaskModal";
+import AddTaskModal from "../AddTaskModal/AddTaskModal";
+
 
 export default function Container() {
   const [showModal, setShowModal] = useState(false);
@@ -66,6 +67,7 @@ export default function Container() {
 
   return (
     <div className={styles.fullscreen}>
+      
       <div className={styles.containermodal}>
         <div>
           <h6 className={styles.titleTasks}>Suas tarefas de hoje</h6>
