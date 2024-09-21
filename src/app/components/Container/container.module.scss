@@ -27,6 +27,7 @@
         font-size: 16px;
         font-weight: 100;
         color: #0000008A;
+        
     }
 
     .containertasks{
@@ -58,13 +59,17 @@
         .containercheck{
             display: flex;
             gap: 0.8rem;
+
+            input{
+                transform: scale(1.8);
+                padding: 2rem;
+                border-color: #D7DDE9;
+                cursor: pointer;
+            }
+
         }
 
-        input{
-            transform: scale(2);
-            border-color: #D7DDE9;
-            cursor: pointer;
-        }
+    
 
         
 
@@ -92,13 +97,17 @@
         .containercheck{
             display: flex;
             gap: 0.8rem;
+
+            
+            input{
+                transform: scale(1.8);
+                padding: 2rem;
+                border-color: #D7DDE9;
+                cursor: pointer;
+            }
         }
 
-        input{
-            transform: scale(1.8);
-            border-color: #D7DDE9;
-            cursor: pointer;
-        }
+    
 
         .titleTasks{
             text-align: center;
@@ -178,6 +187,7 @@
             font-size: 16px;
             border-radius: 8px;
             cursor: pointer; 
+            margin-bottom: 2rem;
         }
     }
 

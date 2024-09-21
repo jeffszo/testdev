@@ -29,12 +29,11 @@ export default function Container() {
   const handleAddTask = () => {
     if (newTaskName.trim() !== "") {
       const newTask: Task = {
-        id: Date.now(), // Gerar um ID único
+        id: Date.now(), 
         title: newTaskName,
         isCompleted: false
       };
-      setTasks(prevTasks => [...prevTasks, newTask]); // Atualiza a lista de tarefas
-      setNewTaskName("");
+      setTasks(prevTasks => [...prevTasks, newTask]); 
       setShowModal(false);
     }
   };
@@ -47,7 +46,7 @@ export default function Container() {
   const handleRemoveTask = () => {
     if (taskToDelete) {
       setTasks(prevTasks => prevTasks.filter((t) => t.id !== taskToDelete.id));
-      setCompletedTasks(prevTasks => prevTasks.filter((t) => t.id !== taskToDelete.id)); // Remove da lista de tarefas finalizadas também
+      setCompletedTasks(prevTasks => prevTasks.filter((t) => t.id !== taskToDelete.id)); 
       setShowDeleteModal(false);
       setTaskToDelete(null);
     }
@@ -55,11 +54,9 @@ export default function Container() {
 
   const handleToggleTask = (task: Task) => {
     if (task.isCompleted) {
-      // Move tarefa de volta para a lista de tarefas pendentes
       setTasks(prevTasks => [...prevTasks, { ...task, isCompleted: false }]);
       setCompletedTasks(prevTasks => prevTasks.filter((t) => t.id !== task.id));
     } else {
-      // Move tarefa para a lista de tarefas finalizadas
       setTasks(prevTasks => prevTasks.filter((t) => t.id !== task.id));
       setCompletedTasks(prevTasks => [...prevTasks, { ...task, isCompleted: true }]);
     }
@@ -99,6 +96,7 @@ export default function Container() {
             <div key={task.id} className={styles.containerdone}>
               <div className={styles.containercheck}>
                 <input 
+                  className={styles.customCheckbox}
                   checked 
                   type="checkbox" 
                   onChange={() => handleToggleTask(task)} 
@@ -117,8 +115,6 @@ export default function Container() {
           ))}
         </div>
 
-
-        {/* Modal de Adicionar Tarefa */}
         <AddTaskModal 
           isOpen={showModal} 
           onClose={handleModalClose} 
@@ -127,7 +123,6 @@ export default function Container() {
           onAddTask={handleAddTask} 
         />
 
-        {/* Modal de Deletar Tarefa */}
         <DeleteTaskModal 
           isOpen={showDeleteModal} 
           onClose={() => setShowDeleteModal(false)} 

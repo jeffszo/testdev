@@ -2,12 +2,8 @@
 
 import { useEffect } from "react";
 import styles from './modal.module.scss'
+import { ModalProps } from "@/app/models/IModal";
 
-interface ModalProps {
-    isOpen: boolean;
-    onClose: () => void;
-    children: React.ReactNode;
-  }
 
 
 export default function Modal ({isOpen, onClose, children}: ModalProps) {
