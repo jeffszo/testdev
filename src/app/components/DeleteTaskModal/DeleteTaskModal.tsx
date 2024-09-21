@@ -12,7 +12,7 @@ interface DeleteTaskModalProps {
   task?: Task;
 }
 
-export default function DeleteTaskModal ({isOpen, onClose, onDelete, task}: DeleteTaskModalProps) {
+export default function DeleteTaskModal ({isOpen, onClose, onDelete,}: DeleteTaskModalProps) {
 
 
   return (
