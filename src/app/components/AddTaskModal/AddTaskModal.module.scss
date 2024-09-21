@@ -1,0 +1,81 @@
+.modalAdd {
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .modalAdd h2 {
+    margin: 1rem 0 1.5rem 0.5rem;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .input{
+    margin: 0.3rem 0 2rem 0;
+    border: 1px solid #D7DDE9;
+    border-radius: 8px;
+    padding: 16px;
+    width: 386px;
+    font-family: inherit;
+  }
+  
+  .modalAdd label {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 0 0 0.5rem;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .containerBtn {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 0.5rem;
+  }
+  
+  .containerBtn button {
+    width: 185px;
+    padding: 16px;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer; 
+  }
+  
+  .containerBtn button:first-child {
+    background: #E7EEFB;
+  }
+  
+  .containerBtn button:last-child {
+    background: linear-gradient(90deg, #0796D3, #53C0F0);
+    color: #ffff;
+  }
+  
+
+  @media (min-width: 320px) and (max-width: 767px) {
+
+    .modalAdd{
+        height: 100vh;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100vw;     
+    }
+
+    .input{
+      width: 100%;
+    }
+
+    .modalAdd h2 {
+      margin-top: 2rem;
+    }
+
+    .containerBtn{
+      flex-direction: column-reverse;
+    }
+
+    .containerBtn button {
+      width: 100%;
+    }
+   
+  }

@@ -1,6 +1,6 @@
-import styles from '../sass/header.module.scss'
+import styles from './header.module.scss'
 import Image from 'next/image'
-import Logo from '../public/logo.svg'
+import Logo from '../../public/logo.svg'
 
 export default function Header () {
     return (
@@ -9,7 +9,9 @@ export default function Header () {
                 <Image src={Logo} height={35} width={35} alt='Logo'/>
                 <p className={styles.textLogo}>FocalPoint</p>
             </div>
-            <h3 className={styles.title}>Bem-vindo de volta, Marcus</h3>
+            <div> 
+                <h3 className={styles.title}>Bem-vindo de volta, Marcus</h3>
+            </div>
             <p className={styles.paragraph}>Segunda, 01 de dezembro de 2025</p>
         </header>
     )

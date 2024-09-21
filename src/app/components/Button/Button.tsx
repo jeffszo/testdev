@@ -1,4 +1,4 @@
-import styles from '../sass/button.module.scss'
+import styles from './button.module.scss'
 import React, { ButtonHTMLAttributes } from 'react';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {

@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import styles from "../sass/container.module.scss";
-import IconDelete from "../public/delete-icon.svg";
-import Button from "./Button";
+import styles from "./container.module.scss";
+import IconDelete from "../../public/delete-icon.svg";
+import Button from "../Button/Button";
 import { useState } from "react";
-import {Task} from '../types/Task';
+import { Task } from '../../types/Task';
+import AddTaskModal from "../AddTaskModal/AddTaskModal";
+import DeleteTaskModal from "../DeleteTaskModal/DeleteTaskModal";
 
 export default function Container() {
   const [showModal, setShowModal] = useState(false);
@@ -17,12 +19,10 @@ export default function Container() {
 
   const handleButtonClick = () => {
     setShowModal(true);
-    document.body.classList.add('body-blur');
   };
 
   const handleModalClose = () => {
     setShowModal(false);
-    document.body.classList.remove('body-blur');
   };
 
   const handleAddTask = () => {
@@ -115,41 +115,27 @@ export default function Container() {
           ))}
         </div>
 
-          <Button onClick={handleButtonClick}>Adicionar nova tarefa</Button>
 
-        {showModal && (
-          <div className={styles.modal}>
-            <div className={styles.modalContent}>
-              <h2>Nova tarefa</h2>
-              <span>Título</span>
-              <input 
-                type="text" 
-                placeholder='Digite' 
-                value={newTaskName} 
-                onChange={(e) => setNewTaskName(e.target.value)} 
-              />
-              <div className={styles.containerbtn}> 
-                <button onClick={handleModalClose}>Cancelar</button>
-                <button onClick={handleAddTask}>Adicionar</button>
-              </div>
-              
-            </div>
-          </div>
-        )}
+        {/* Modal de Adicionar Tarefa */}
+        <AddTaskModal 
+          isOpen={showModal} 
+          onClose={handleModalClose} 
+          newTaskName={newTaskName} 
+          setNewTaskName={setNewTaskName} 
+          onAddTask={handleAddTask} 
+        />
 
-        {showDeleteModal && (
-          <div className={styles.modal}>
-            <div className={styles.modalContent}>
-              <h2>Confirmar exclusão</h2>
-              <p>Tem certeza que deseja excluir a tarefa "{taskToDelete?.title}"?</p>
-              <div>
-                <button onClick={() => setShowDeleteModal(false)}>Cancelar</button>
-                <button onClick={handleRemoveTask}>Confirmar</button>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Modal de Deletar Tarefa */}
+        <DeleteTaskModal 
+          isOpen={showDeleteModal} 
+          onClose={() => setShowDeleteModal(false)} 
+          onDelete={handleRemoveTask} 
+          task={taskToDelete || undefined} 
+        />
       </div>
+
+      <Button onClick={handleButtonClick}>Adicionar nova tarefa</Button>
+
     </div>
   );
 }
