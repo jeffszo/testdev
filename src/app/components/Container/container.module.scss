@@ -58,6 +58,8 @@
 
         .containercheck{
             display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 0.8rem;
 
             input{
@@ -102,6 +104,8 @@
 
         .containercheck{
             display: flex;
+            justify-content: center;
+            align-items: center;
             gap: 0.8rem;
 
             
@@ -128,6 +132,7 @@
         .taskname{
             color: #808080;
             text-decoration: line-through;
+            text-align: center;
         }
     }
 
