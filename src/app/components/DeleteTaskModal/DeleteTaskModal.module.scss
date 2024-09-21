@@ -40,11 +40,12 @@
   
   .containerBtn button:first-child {
     background: #E7EEFB;
+    color: #000 !important;
   }
   
   .containerBtn button:nth-child(2) {
     background: linear-gradient(90deg, #D30707, #F05353); 
-    color: #fff;
+    color: #fff !important;
   }
   
 
