@@ -1,310 +1,263 @@
-.fullscreen{
+.fullscreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.containermodal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+  width: 455px;
+  border: 1px solid #eaecf0;
+  margin: 1rem;
+}
+
+.fullscreen h6 {
+  margin: 1.5rem 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0000008a;
+}
+
+.containertasks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.containertodo:hover {
+  background-color: #f7f9fd;
+}
+
+.containertodo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  width: 25rem;
+  padding: 0 1.25rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 2px dashed #d7dde9;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.containercheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.inputtasks {
+    width: 1.5rem;
+    height: 1.5rem;
+    appearance: none;
+    border-radius: 4px;
+    border: 2px solid rgba(176, 187, 209, 1);
+    cursor: pointer;
+}
+
+.containerdone .containercheck .customCheckbox {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid rgba(176, 187, 209, 1);
+}
+
+.fullscreen span {
+  font-weight: 400;
+}
+
+.containerdone {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 3.5rem;
+  width: 25rem;
+  padding: 0 1.25rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border: 2px dashed #d7dde9;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.containerdone .containercheck input {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+
+
+.titleTasks,
+.titleDone {
+  text-align: center;
+}
+
+.tasknamedone {
+  color: #808080;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: line-through;
+}
+
+.taskname{
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  width: 450px;
+  border-radius: 16px;
+  height: 286px;
+  z-index: 1000;
+}
+
+.modaladd {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+}
+
+.modaladd h2 {
+  margin: 1rem 0 1.5rem 0.5rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.modaladd span {
+  margin: 0 0.5rem;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.modaladd input {
+  margin: 0.3rem 0 2rem 0.5rem;
+  border: 1px solid #d7dde9;
+  border-radius: 8px;
+  padding: 16px;
+  width: 386px;
+  font-family: inherit;
+}
+
+.modaladd input::placeholder {
+  font-size: 16px;
+}
+
+.modaladd .containerbtn {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.modaladd .containerbtn button {
+  width: 185px;
+  padding: 16px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.modaladd .containerbtn button:nth-child(2) {
+  background: linear-gradient(90deg, #0796d3, #53c0f0);
+  color: #fff;
+}
+
+.modaldelete {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: white;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.modaldelete h2 {
+  margin: 1rem 0 0.5rem 0.5rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.modaldelete span {
+  margin: 0.5rem 0 0 0.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0000008a;
+}
+
+.modaldelete .containerbtn {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0 0.5rem;
+}
+
+.modaldelete .containerbtn button {
+  width: 185px;
+  padding: 16px;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modaldelete .containerbtn button:nth-child(2) {
+  background: linear-gradient(90deg, #d30707, #f05353);
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .fullscreen {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 1000;
+  }
 
+  .containermodal {
+    margin: 0 1rem;
+    height: 57vh;
+    width: 90%;
+  }
 
-    .containermodal{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 16px;
-        width: 455px;
-        border: 1px solid #EAECF0;
-        margin: 1rem;
-    }
+  .containertodo {
+    padding-left: 0;
+    gap: 0;
+    width: 70vw;
+    padding: 0 2.5rem;
+  }
 
-    h6{
-        margin: 1.5rem 0;
-        font-size: 16px;
-        font-weight: 100;
-        color: #0000008A;
-        
-    }
-
-    .containertasks{
-        display: flex;
-        flex-direction: column;
-        gap: 1.4rem;
-    }
-
-    .containertodo:hover{
-        background-color: #F7F9FD;
-    }
-
-    .containertodo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 3.5rem;
-        width: 25rem;
-        padding: 0 1.25rem;
-        margin: 1rem 0;
-        border-radius: 8px;
-        border: 2px dashed #D7DDE9;
-        gap: 1rem;
-        cursor: pointer;
-
-     
-
-
-        .containercheck{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.8rem;
-
-            input{
-                width: 1.5rem; 
-                height: 1.5rem;          
-                cursor: pointer;
-                border-radius: 4px;
-                cursor: pointer;
-  
-            }
-
-             input:checked {
-          
-              }
-
-        }
-
-    
-
-        
-
-       
-
-        span{
-            font-weight: 400;
-        }
-    }
-
-    .containerdone{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-        height: 3.5rem;
-        width: 25rem;
-        padding: 0 1.25rem;
-        margin: 1rem 0;
-        border-radius: 8px;
-        border: 2px dashed #D7DDE9;
-        gap: 1rem;
-        cursor: pointer;
-
-        .containercheck{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0.8rem;
-
-            
-            input{
-                width: 1.5rem; 
-                height: 1.5rem;
-                border-color: #D7DDE9;
-                border-radius: 4px;
-                cursor: pointer;
-         
-            }
-
-            input:checked {
-                color: #fff 
-              }
-        }
-
-    
-
-        .titleTasks{
-            text-align: center;
-        }
-
-        .taskname{
-            color: #808080;
-            text-decoration: line-through;
-            text-align: center;
-        }
-    }
-
-    .titleDone, .titleTasks{
-        text-align: center;
-    }
-
-    
-.modal{
-    position: fixed; /* Posiciona o modal em relação à janela */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8); /* Centraliza o modal */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
-    width: 450px;
-    border-radius: 16px;
-    height: 286px; /* Altura do modal original */
-    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
-
+  .containerdone {
+    width: 65vw;
+  }
 }
-
-
-  
-  .modaladd {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: white;
-    padding: 20px;
-
-
-    h2{
-        margin: 1rem 0 1.5rem 0.5rem;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    span{
-        margin: 0 0.5rem;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    input{
-        margin: 0.3rem 0 2rem 0.5rem;
-        border: 1px solid #D7DDE9;
-        border-radius: 8px;
-        padding: 16px;
-        width: 386px;
-        font-family: inherit;
-    }
-
-    input::placeholder{
-        font-size: 16px;
-    }
-
-    .containerbtn{
-        display: flex;
-        gap: 0.5rem;
-        margin-left: 0.5rem;
-
-        button{
-            width: 185px;
-            padding: 16px;
-            border: none;
-            font-weight: 400;
-            font-size: 16px;
-            border-radius: 8px;
-            cursor: pointer; 
-            margin-bottom: 2rem;
-        }
-    }
-
-    .containerbtn button:nth-child(2){
-        background: linear-gradient(90deg, #0796D3, #53C0F0);
-        color: #ffff;
-    }
-  }
-
-
-  .modaldelete{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    background-color: white;
-    gap: 1rem;
-    padding: 20px;
-
-
-
-    
-
-    h2{
-        margin: 1rem 0 0.5rem 0.5rem;
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    span{
-        margin: 0.5rem 0 0 0.5rem;
-        font-size: 16px;
-        font-weight: 400;
-        color: #0000008A;
-    }
-
-
-    .containerbtn{
-        display: flex;
-        gap: 0.5rem;
-        margin: 1.5rem 0 0 0.5rem;
-
-        button{
-            width: 185px;
-            padding: 16px;
-            border: none;
-            font-weight: 400;
-            font-size: 16px;
-            border-radius: 8px;
-            cursor: pointer; 
-        }
-    }
-
-    .containerbtn button:nth-child(2){
-        background: linear-gradient(90deg, #D30707, #F05353);
-        color: #ffff;
-    }
-
-
-
-  }
-
-
-
-
-}
-
-
-
-@media (min-width: 320px) and (max-width: 767px) {
-
-    
-    .fullscreen{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-
-        .containermodal{
-            margin: 0 1rem;
-            height: 57vh;
-            width: 90%;
-        }
-
-        .containertodo{
-            padding-left: 0;
-            gap: 0;
-            width: 70vw;
-            padding: 0 2.5rem;
-        }
-
-        .containerdone{
-            width: 65vw;
-
-        }
-        
-      
-    }
-
-    
-  }

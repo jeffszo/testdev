@@ -1,9 +1,7 @@
 import Modal from "../Modal/Modal";
 import styles from "./AddTaskModal.module.scss";
 
-import { AddTaskModalProps } from "@/app/models/IAddTaskModal";
-
-
+import { IAddTaskModalProps } from "@/app/models/IAddTaskModal";
 
 export default function AddTaskModal({
   isOpen,
@@ -11,13 +9,12 @@ export default function AddTaskModal({
   newTaskName,
   setNewTaskName,
   onAddTask,
-}: AddTaskModalProps) 
+}: IAddTaskModalProps) {
 
-
-{
+  
   const handleAddTask = () => {
-    onAddTask(); 
-    setNewTaskName(""); 
+    onAddTask();
+    setNewTaskName("");
   };
 
   return (
@@ -25,7 +22,7 @@ export default function AddTaskModal({
       <div className={styles.modalAdd}>
         <h2>Nova tarefa</h2>
         <label>
-          Título
+          Título {""}
           <input
             className={styles.input}
             type="text"

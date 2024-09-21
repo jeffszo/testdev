@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import styles from './modal.module.scss'
-import { ModalProps } from "@/app/models/IModal";
+import { IModalProps } from "@/app/models/IModal";
 
 
 

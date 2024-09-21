@@ -65,18 +65,22 @@ export default function Container() {
   return (
     <div className={styles.fullscreen}>
       
-      <div className={styles.containermodal}>
+      <form className={styles.containermodal}>
         <div>
           <h6 className={styles.titleTasks}>Suas tarefas de hoje</h6>
           {tasks.map((task) => (
             <div key={task.id} className={styles.containertodo}>
               <div className={styles.containercheck}>
-                <input 
+              
+                  <input 
+                  className={styles.inputtasks}
                   checked={task.isCompleted} 
                   type="checkbox" 
                   onChange={() => handleToggleTask(task)} 
-                />
-                <span className={styles.taskname}>{task.title}</span>
+                  />
+              
+
+                <p className={styles.taskname}>{task.title}</p>
               </div>
               <Image 
                 src={IconDelete} 
@@ -101,7 +105,7 @@ export default function Container() {
                   type="checkbox" 
                   onChange={() => handleToggleTask(task)} 
                 />
-                <span className={styles.taskname}>{task.title}</span>
+                <p className={styles.tasknamedone}>{task.title}</p>
               </div>
               <Image 
                 src={IconDelete} 
@@ -129,7 +133,7 @@ export default function Container() {
           onDelete={handleRemoveTask} 
           task={taskToDelete || undefined} 
         />
-      </div>
+      </form>
 
       <Button onClick={handleButtonClick}>Adicionar nova tarefa</Button>
 

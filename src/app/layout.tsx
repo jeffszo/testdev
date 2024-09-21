@@ -6,7 +6,7 @@ import './styles/global.scss';
 
 const inter_tight = Inter_Tight({
   subsets: ['latin'],
-  weight: ['400', '500', '700'], 
+  weight: ['100', '200', '300', '400', '500', '700'], 
 } );
 
 
