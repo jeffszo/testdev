@@ -1,5 +1,7 @@
 import Modal from "../Modal/Modal";
 import styles from "./AddTaskModal.module.scss";
+import {  KeyboardEvent } from 'react';
+
 
 import { IAddTaskModalProps } from "@/app/models/IAddTaskModal";
 
@@ -17,6 +19,13 @@ export default function AddTaskModal({
     setNewTaskName("");
   };
 
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      handleAddTask();
+    }
+  };
+
   return (
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className={styles.modalAdd}>
@@ -29,6 +38,7 @@ export default function AddTaskModal({
             placeholder="Digite"
             value={newTaskName}
             onChange={(e) => setNewTaskName(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
         </label>
         <div className={styles.containerBtn}>
