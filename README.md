@@ -7,28 +7,23 @@
     <li>Além das boas práticas de programação, esperamos ver fidelidade MÁXIMA ao design. Preste atenção aos detalhes como sombras, gradientes, entre outros</li>
 </ul>
 
-<!-- ## Layout:
+## Layout:
 
 ### Home - desktop
-![](/src/app/public/layout/home-tarefas-desktop.png)
-
+<img src='src/app/public/layout/home-tarefas-desktop.png' alt='Home - desktop'/>
 
 ### Nova tarefa - desktop
-![](/src/app/public/layout/adicionar-tarefas-desktop.png)
+<img src='src/app/public//layout/adicionar-tarefas-desktop.png' alt='Nova tarefa - desktop'/>
 
 ### Deletar tarefa - desktop
-![](/src/app/public/layout/modal_deletar_desktop.png)
+<img src='src/app/public//layout/modal_deletar_desktop.png' alt='Deletar tarefa - desktop'/>
 <br/>
 
 ### Home - mobile
-![](/src/app/public/layout/home_tarefas_mobile.png)
+<img src='src/app/public//layout/home_tarefas_mobile.png' alt='Home - mobile'/>
 
 ### Nova tarefa - mobile
-![](/src/app/public/layout/modal_nova_tarefa_mobile.png)
-
+<img src='src/app/public//layout/modal_nova_tarefa_mobile.png' alt='Nova tarefa - mobile'/>
 
 ### Deletar tarefa - mobile
-![](/src/app/public/layout/modal_deletar_mobile.png) -->
-
-## Layout:
-https://www.figma.com/design/4iESWnasLZSHyghg1ipj1P/Teste-Dev-Junior---Legaplan?node-id=8-172&node-type=frame&t=1dfEiJFQC5ZIrCuB-0
+<img src='src/app/public//layout/modal_deletar_mobile.png' alt='Deletar tarefa - mobile'/>
