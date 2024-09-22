@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)..
+## 📌 Legaplan - Teste
 
-## Getting Started
+### Instruções:
+<ul> 
+    <li>Lembre-se do prazo combinado para a entrega do teste (em até 3 dias após sua inscrição).</li><br/>
+     <li>O projeto deve ser criado utilizando <strong>NextJS</strong> utilizando o App Router e <strong>SCSS</strong></li> <br/>
+     <li>Além das boas práticas de programação, esperamos ver fidelidade MÁXIMA ao design. Preste atenção aos detalhes como sombras, gradientes, entre outros</li>
+    
+</ul>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Layout:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Home - desktop
+<img src='src/app/public/layout/home-tarefas-desktop.png'/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Nova tarefa - desktop
+<img src='src/app/public/layout/adicionar-tarefas-desktop.png'/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Deletar tarefa - desktop
+<img src='src/app/public/layout/modal_deletar_desktop.png'/>
+<br/>
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+### Home - mobile
+<img src='src/app/public/layout/home_tarefas_mobile.png'/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Nova tarefa - mobile
+<img src='src/app/public/layout/modal_nova_tarefa_mobile.png'/>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deletar tarefa - mobile
+<img src='src/app/public/layout/modal_deletar_mobile.png'/>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
