@@ -8,22 +8,4 @@
 </ul>
 
 ## Layout:
-
-### Home - desktop
-<img src='src/app/public/layout/home-tarefas-desktop.png' alt='Home - desktop'/>
-
-### Nova tarefa - desktop
-<img src='src/app/public//layout/adicionar-tarefas-desktop.png' alt='Nova tarefa - desktop'/>
-
-### Deletar tarefa - desktop
-<img src='src/app/public//layout/modal_deletar_desktop.png' alt='Deletar tarefa - desktop'/>
-<br/>
-
-### Home - mobile
-<img src='src/app/public//layout/home_tarefas_mobile.png' alt='Home - mobile'/>
-
-### Nova tarefa - mobile
-<img src='src/app/public//layout/modal_nova_tarefa_mobile.png' alt='Nova tarefa - mobile'/>
-
-### Deletar tarefa - mobile
-<img src='src/app/public//layout/modal_deletar_mobile.png' alt='Deletar tarefa - mobile'/>
+https://www.figma.com/design/4iESWnasLZSHyghg1ipj1P/Teste-Dev-Junior---Legaplan?node-id=8-172&node-type=frame&t=1dfEiJFQC5ZIrCuB-0
