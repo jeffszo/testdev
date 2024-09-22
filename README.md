@@ -7,7 +7,7 @@
     <li>Além das boas práticas de programação, esperamos ver fidelidade MÁXIMA ao design. Preste atenção aos detalhes como sombras, gradientes, entre outros</li>
 </ul>
 
-## Layout:
+<!-- ## Layout:
 
 ### Home - desktop
 ![](/src/app/public/layout/home-tarefas-desktop.png)
@@ -28,5 +28,5 @@
 
 
 ### Deletar tarefa - mobile
-![](/src/app/public/layout/modal_deletar_mobile.png)
+![](/src/app/public/layout/modal_deletar_mobile.png) -->
 
