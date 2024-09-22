@@ -30,3 +30,5 @@
 ### Deletar tarefa - mobile
 ![](/src/app/public/layout/modal_deletar_mobile.png) -->
 
+## Layout:
+https://www.figma.com/design/4iESWnasLZSHyghg1ipj1P/Teste-Dev-Junior---Legaplan?node-id=8-172&node-type=frame&t=1dfEiJFQC5ZIrCuB-0
