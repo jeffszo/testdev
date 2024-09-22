@@ -12,22 +12,22 @@
 ## Layout:
 
 ### Home - desktop
-<img src='src/app/public/layout/home-tarefas-desktop.png'/>
+<img src='/src/app/public/layout/home-tarefas-desktop.png'/>
 
 ### Nova tarefa - desktop
-<img src='src/app/public/layout/adicionar-tarefas-desktop.png'/>
+<img src='/src/app/public/layout/adicionar-tarefas-desktop.png'/>
 
 ### Deletar tarefa - desktop
-<img src='src/app/public/layout/modal_deletar_desktop.png'/>
+<img src='/src/app/public/layout/modal_deletar_desktop.png'/>
 <br/>
 
 
 ### Home - mobile
-<img src='src/app/public/layout/home_tarefas_mobile.png'/>
+<img src='/src/app/public/layout/home_tarefas_mobile.png'/>
 
 ### Nova tarefa - mobile
-<img src='src/app/public/layout/modal_nova_tarefa_mobile.png'/>
+<img src='/src/app/public/layout/modal_nova_tarefa_mobile.png'/>
 
 ### Deletar tarefa - mobile
-<img src='src/app/public/layout/modal_deletar_mobile.png'/>
+<img src='/src/app/public/layout/modal_deletar_mobile.png'/>
 
